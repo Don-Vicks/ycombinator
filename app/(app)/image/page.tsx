@@ -92,28 +92,28 @@ const EcosystemCallCard = () => {
           </div>
 
          
-          {/* User Image - Positioned with adjusted right value */}
           <div className="absolute top-1/2 right-[50%] transform -translate-y-1/2 w-64 h-64 z-50">
-            <div className="w-5xl h-5xl bg-gradient-to-r from-[rgba(0,0,7,1)] to-[rgba(4,4,32,1)] p-[17px] rounded-full opacity-98">
-              <div className="w-full h-full bg-white rounded-full overflow-hidden">
-                {userImage ? (
-                  <img
-                    src={userImage}
-                    alt="User"
-                    width={600}
-                    style={{
-                      maxWidth: '100%',
-                      maxHeight: '100%',
-                    }}
-                  />
-                ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gray-500 text-xs">
-                    No Image
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
+  <div className="w-full h-full bg-gradient-to-r from-[rgba(0,0,7,1)] to-[rgba(4,4,32,1)] p-[17px] rounded-full opacity-98">
+    <div className="w-full h-full bg-red rounded-full overflow-hidden">
+      {userImage ? (
+        <img
+          src={userImage}
+          alt="User"
+          className="w-full h-full object-fill"
+          style={{
+            maxWidth: '100%',
+            maxHeight: '100%',
+          }}
+        />
+      ) : (
+        <div className="flex items-center justify-center w-full h-full bg-gray-500 text-xs">
+          No Image
+        </div>
+      )}
+    </div>
+  </div>
+</div>
+
 
 
           {/* Right side with content */}
