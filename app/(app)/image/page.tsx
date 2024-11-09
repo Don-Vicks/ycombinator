@@ -6,7 +6,7 @@ import Image from 'next/image';
 const EcosystemCallCard = () => {
   const [name, setName] = useState('');
   const [userImage, setUserImage] = useState('');
-  const [location, setLocation] = useState('Input your Location');
+  const [location, setLocation] = useState('Philippines');
   const fileInputRef = useRef(null);
   const cardRef = useRef(null);
 
@@ -81,7 +81,7 @@ const EcosystemCallCard = () => {
           {/* Left side with city image */}
           <div className="absolute left-0 top-0 bottom-0 w-2/5 h-full">
             <Image
-              src="/newcity.png"
+              src="/philips.png"
               alt="City Image"
               className="h-full w-full object-cover"
               width={468}
@@ -167,13 +167,16 @@ const EcosystemCallCard = () => {
     onChange={(e) => setLocation(e.target.value)}
     className="bg-transparent text-white text-xl font-medium outline-none border-none placeholder-white/70"
     style={{ minWidth: '180px' }}
+    readOnly
   />
   <div className="flex items-center gap-4 text-white">
     <input
       type="text"
-      placeholder="Enter time"
+      //placeholder="Enter time"
+      value={'6pm'}
       className="bg-transparent text-white text-lg font-medium outline-none border-none text-center form-normal"
       style={{ width: '100px' }}
+      readOnly
     />
     <input
       type="text"
@@ -184,7 +187,7 @@ const EcosystemCallCard = () => {
     />
     <input
       type="text"
-      value="07 Nov."
+      value="09 Nov."
       readOnly
       className="bg-transparent text-white text-lg font-normal outline-none border-none text-center"
       style={{ width: '80px' }}

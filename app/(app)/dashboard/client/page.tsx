@@ -29,6 +29,8 @@ const Page = () => {
 
   return (
     <div>
+        <h1 className="font-archivo text-4xl">This is Bebas Neue</h1>
+
       {isLoading ? (
         <p>Loading dog image...</p>
       ) : (
